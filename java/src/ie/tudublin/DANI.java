@@ -1,7 +1,6 @@
 package ie.tudublin;
 
 import java.util.ArrayList;
-
 import processing.core.PApplet;
 
 public class DANI extends PApplet
@@ -13,12 +12,29 @@ public class DANI extends PApplet
 
 	float off = 0;
 
+	int count = 0;
+
 	public void loadFile()
 	{
 		sonnet = loadStrings("small.txt");
 
 		for(int i = 0; i < sonnet.length; i++)
-		{}
+		{
+			line = sonnet[i];
+
+			for(int j = 0; j < line.length(); j++)
+			{
+				split(line, ' ');
+			}
+		}
+	}
+
+	public void printModel()
+	{
+		for(Follow f : follow)
+		{
+			println(f);
+		}
 	}
 
 	public String findFollow()
@@ -49,6 +65,7 @@ public class DANI extends PApplet
 		colorMode(HSB);
 
 		loadFile();
+		//printModel();
 	}
 
 	public void draw() 
