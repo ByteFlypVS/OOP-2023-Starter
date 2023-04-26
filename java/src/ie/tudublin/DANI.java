@@ -6,31 +6,34 @@ import processing.core.PApplet;
 
 public class DANI extends PApplet
 {
+	ArrayList<Follow> follow = new ArrayList<Follow>();
+
 	String[] sonnet;
 
 	float off = 0;
 
 	public void loadFile()
-	{}
+	{
+		loadStrings("small.txt");
+	}
 
 	public String[] writeSonnet()
     {
         return null;
     }
 
+	public void keyPressed()
+	{}
+
 	public void settings()
 	{
-		size(1000, 1000);
-		//fullScreen(SPAN);
+		fullScreen();
 	}
 
 	public void setup()
 	{
 		colorMode(HSB);
 	}
-
-	public void keyPressed()
-	{}
 
 	public void draw() 
     {
