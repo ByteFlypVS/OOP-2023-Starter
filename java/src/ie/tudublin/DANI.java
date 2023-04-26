@@ -22,6 +22,7 @@ public class DANI extends PApplet
 		for(int i = 0; i < sonnet.length; i++)
 		{
 			line = sonnet[i];
+			line = line.toLowerCase();
 
 			for(int j = 0; j < line.length(); j++)
 			{
@@ -30,6 +31,8 @@ public class DANI extends PApplet
 
 			for(int k = 0; k < words.length; k++)
 			{
+				count = 1;
+
 				Follow f = new Follow(words[k], count);
 				follow.add(f);
 			}
