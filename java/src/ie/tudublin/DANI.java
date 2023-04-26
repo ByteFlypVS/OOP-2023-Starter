@@ -9,6 +9,7 @@ public class DANI extends PApplet
 	ArrayList<Follow> follow = new ArrayList<Follow>();
 
 	String[] sonnet;
+	String line;
 
 	float off = 0;
 
