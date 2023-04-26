@@ -30,7 +30,8 @@ public class DANI extends PApplet
 
 			for(int k = 0; k < words.length; k++)
 			{
-				println(words[k]);
+				Follow f = new Follow(words[k], count);
+				follow.add(f);
 			}
 		}
 	}
@@ -71,7 +72,7 @@ public class DANI extends PApplet
 		colorMode(HSB);
 
 		loadFile();
-		//printModel();
+		printModel();
 	}
 
 	public void draw() 
