@@ -8,6 +8,7 @@ public class DANI extends PApplet
 	ArrayList<Follow> follow = new ArrayList<Follow>();
 
 	String[] sonnet;
+	String[] words;
 	String line;
 
 	float off = 0;
@@ -24,7 +25,12 @@ public class DANI extends PApplet
 
 			for(int j = 0; j < line.length(); j++)
 			{
-				split(line, ' ');
+				words = split(line, ' ');
+			}
+
+			for(int k = 0; k < words.length; k++)
+			{
+				println(words[k]);
 			}
 		}
 	}
