@@ -14,7 +14,20 @@ public class DANI extends PApplet
 
 	public void loadFile()
 	{
-		loadStrings("small.txt");
+		sonnet = loadStrings("small.txt");
+
+		for(int i = 0; i < sonnet.length; i++)
+		{}
+	}
+
+	public String findFollow()
+	{
+		return null;
+	}
+
+	public String findWord()
+	{
+		return null;
 	}
 
 	public String[] writeSonnet()
@@ -33,6 +46,8 @@ public class DANI extends PApplet
 	public void setup()
 	{
 		colorMode(HSB);
+
+		loadFile();
 	}
 
 	public void draw() 
@@ -42,5 +57,7 @@ public class DANI extends PApplet
 		noStroke();
 		textSize(20);
         textAlign(CENTER, CENTER);
+
+		writeSonnet();
 	}
 }
