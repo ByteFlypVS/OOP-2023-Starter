@@ -4,33 +4,33 @@ import java.util.ArrayList;
 
 import processing.core.PApplet;
 
-public class DANI extends PApplet {
+public class DANI extends PApplet
+{
+	String[] sonnet;
 
-	
+	float off = 0;
 
-	public void settings() {
-		size(1000, 1000);
-		//fullScreen(SPAN);
-	}
+	public void loadFile()
+	{}
 
-    String[] sonnet;
-
-    public String[] writeSonnet()
+	public String[] writeSonnet()
     {
         return null;
     }
 
-	public void setup() {
+	public void settings()
+	{
+		size(1000, 1000);
+		//fullScreen(SPAN);
+	}
+
+	public void setup()
+	{
 		colorMode(HSB);
-
-       
 	}
 
-	public void keyPressed() {
-
-	}
-
-	float off = 0;
+	public void keyPressed()
+	{}
 
 	public void draw() 
     {
@@ -39,6 +39,5 @@ public class DANI extends PApplet {
 		noStroke();
 		textSize(20);
         textAlign(CENTER, CENTER);
-        
 	}
 }
